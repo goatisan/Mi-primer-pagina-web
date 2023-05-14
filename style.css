@@ -397,6 +397,10 @@ td, th{
     overflow: hidden;
 }
 
+.Contenedor{
+    margin-left: 40px;
+}
+
 .iconos:hover{
     border: 4px solid #eccf41;
     box-shadow: 0 0 20px #eccf41;
