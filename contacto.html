@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Contacto - ANKARA SPA</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img class="logospa" src="Imagenes-contacto/Logospa.jpg" alt="Logo de nuestro SPA"></h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>    
+        </header>
+            <main>
+                <form>
+                    <label for="nombreapellido">Nombre y Aprellido</label>
+                    <input type="text" id="nombreapellido" class="input-padron" required>
+
+                    <label for="correoelectronico">Correo electrónico</label>
+                    <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@xxxxxx.com">
+
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" class="input-padron" required placeholder="(xxx) xxx xx xx">
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+                    
+                    <fieldset>
+                        <legend>¿Cómo le gustaría que lo contactemos?</legend>
+
+                        <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                        
+
+                        <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                        
+                        <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>                        
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>¿En qué horario deseas ser atendido?</legend>
+                        <select>
+                            <option>Mañana</option>
+                            <option>Tarde</option>
+                        </select>
+                    </fieldset>
+
+                    <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de ANKARA SPA?</label>
+
+                    <input type="submit" value="Enviar formulario" class="enviar">
+                    
+                </form>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Día</th>
+                            <th>Horario</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>Lunes a Viernes</td>
+                            <td>8 am - 4 pm</td>
+                        </tr>
+
+                        <tr>
+                            <td>Sábado</td>
+                            <td>8 am - 12 pm</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+
+            <footer class="pie-pagina">
+                <div class="grupo-1">
+                    <div class="logo">
+                        <img src="Imagenes-contacto/Logospa.jpg" alt="Logo del SPA"> 
+                    </div>
+    
+                    <div class="nosotros">
+                        <h4>SOBRE NOSTROS</h4>
+                        <p>Somos especialista, nos esforzamos día a día para ofrecer siempre el mejor servicio posible a nuestros clientes.</p>
+                        <p>¡Vive tu mejor experiencia!</p>
+                    </div>
+        
+                    <div class="redes-sociales">
+                        <ul>
+                            <li class="facebook"><a href="https://www.facebook.com/santyrakin/"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                            <li class="instagram"><a href="https://www.instagram.com/goa.95/"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+                            <li class="whatsapp"><a href="https://api.whatsapp.com/send?phone=%2B573145228225&text=Reciba+un+cordial+saludo%2C%0AMi+nombre+es+Santiago%0ADime%2C+%C2%BFen+qu%C3%A9+puedo+colaborar%3F"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                            <li class="linkedin"><a href="https://www.linkedin.com/in/santiagojaramillop/"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="grupo-2">
+                    <small>&copy; 2023 <b>ANKARA SPA</b> - Todos los derechos reservados.</small>
+                    <h6 class="mi-nombre">Created by Santiago Jaramillo</h6> 
+                </div> 
+            </footer>
+</body>
+</html>

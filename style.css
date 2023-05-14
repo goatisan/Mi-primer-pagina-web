@@ -1,0 +1,473 @@
+body{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Signika Negative', sans-serif;
+}
+
+header{
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #000c40);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #000c40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logospa{
+    width: 150px;
+    object-fit: cover;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+    50% { 
+        transform: scale(120%);
+    }
+    0% {
+        transform: scale(100%);
+    }
+}
+
+nav{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    text-align: center;
+    justify-content: center;
+}
+nav li{
+    display: inline-block;
+    margin: 0 0 0 15px;
+    position: relative;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: .2rem;
+    background: #2a90bc;
+    transition: .6s;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: .2rem;
+    background: #892d63;
+    transition: .6s;
+}
+
+nav ul li:hover a{
+    color: #c3e613;
+}
+
+nav ul li:hover a::before{
+    width: 50%;    
+    transform: translate(100%);
+}
+
+nav ul li:hover a::after{
+    width: 50%; 
+    transform: translate(-100%);  
+}
+
+.productos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.productos li{
+    text-align: center;
+    width: 90%;
+    border-radius: 30px;
+    border: solid;
+    margin: 2em;
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.productos li:hover{
+    border-color: 4px solid black;
+    box-shadow: 0 0 100px black;
+    transition: all 0.6s ease;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.productos li:hover h2{
+    font-family: monospace;
+    color: #2a90bc;
+}
+
+.producto-descripcion{
+    font-size: 15px;
+    margin: 30px 10px 15px 10px;
+    text-align: left;
+}
+
+.producto-descripcion:before{
+    content: "⚠ ";
+    color: blue;
+}
+
+.imagen-producto{
+    width: 80px;
+    margin: 2em;
+}
+
+.pie-pagina{
+    width: 100%;
+    background: #F0F2F0;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #000c40);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #000c40); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 250px;
+    object-fit: cover;
+    animation: zoom 3s linear infinite;
+}
+
+@keyframes zoom {
+    50% { 
+        transform: scale(120%);
+    }
+    0% {
+        transform: scale(100%);
+    }
+}
+
+.nosotros h4{
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-family: arial;
+    margin-top: 50px;
+}
+
+.nosotros p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.redes-sociales{
+    display:inline-block;
+    margin-top: 6em;
+}
+
+.redes-sociales ul{
+    list-style: none;
+}
+
+.redes-sociales ul li{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    float: left;
+    transition: all 0.6s ease;
+}
+ 
+.redes-sociales ul li .fa{
+    color: #080808;
+    margin-top: 5px;
+    transition: all 0.6s ease;
+}
+
+.redes-sociales ul li:hover.facebook{
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 20px #3b5998;
+    transition: all 0.6s ease;
+  }
+
+.redes-sociales ul li:hover .fa-facebook{
+    color: #3b5998;
+    text-shadow: 0 0 20px #3b5998;
+    transition: all 0.6s ease;
+}
+
+.redes-sociales ul li:hover.instagram{
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 20px #bc2a8d;
+    transition: all 0.6s ease;
+}
+
+.redes-sociales ul li:hover .fa-instagram{
+    color: #bc2a8d;
+    text-shadow: 0 0 20px #bc2a8d;
+    transition: all 0.6s ease;
+}
+
+.redes-sociales ul li:hover.whatsapp{
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 20px #4dc247;
+    transition: all 0.6s ease;
+}
+
+.redes-sociales ul li:hover .fa-whatsapp{
+    color: #4dc247;
+    text-shadow: 0 0 20px #4dc247;
+    transition: all 0.6s ease;
+}
+
+.redes-sociales ul li:hover.linkedin{
+    border: 5px solid #0e76a8;
+    box-shadow: 0 0 20px #0e76a8;
+    transition: all 0.6s ease;
+}
+
+.redes-sociales ul li:hover .fa-linkedin{
+    color: #0e76a8;
+    text-shadow: 0 0 20px #0e76a8;
+    transition: all 0.6s ease;
+}
+
+.pie-pagina .grupo-2{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    padding: 15px 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+form{
+    margin: 40px 0;
+    
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+    background: #0d7fdb;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: yellowgreen;
+    transform: scale(1.2);
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+table{
+    margin: 40px 40px;
+    
+}
+
+thead{
+    background: rgb(105, 201, 230);
+    color: beige;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid #000;
+    padding: 10px 15px;
+}
+
+/*Aquí inicia el css para el home*/
+
+.banner{
+    width: 100%;
+}
+
+.principal{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 2em 0 2em;
+    text-align: center;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.titulo-principal{
+    text-align: center;
+    font-size: 3em;
+    margin: 1em 0 1em;
+    color: brown;
+    font-family: arial;
+}
+
+.subtitulo-principal{
+    font-size: 30px; 
+    text-align: center; 
+    font-family: monospace;
+    color: brown; 
+    margin: 1em 0 1em;   
+}
+
+.frase{
+    font-size: 24px;
+    color: rgb(57, 145, 239);
+    font-style: italic;
+    margin-top: 2em;
+}
+
+.subliminal p{
+    text-align: center;
+    font-style: italic;
+    margin: 2em;
+}
+
+.iconos{
+    width: 150px;
+    height: 170px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    border: 3px solid #000;
+    border-radius: 10%;
+    box-shadow: 12px 12px 10px black;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.iconos:hover{
+    border: 4px solid #eccf41;
+    box-shadow: 0 0 20px #eccf41;
+    transition: all 0.6s ease;
+}
+
+.iconos h4{
+    font-size: 1em;
+    font-family: verdana;
+    margin-top: 20px;
+}
+ .logotipo{
+    width: 100px;
+    height: 100px;
+    margin-top: 10PX;
+ }
+
+.video{
+    padding: 2em;
+    margin: 2em auto;
+    width: 940px;
+}
+
+.mapa{
+    padding: 3em;
+}
+
+.mapa-contenedor{
+    width: 940px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caja, .principal, .video, .mapa-contenedor{
+        width: auto;
+    }
+
+    .iconos{
+        margin: 1em;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+    .redes-sociales{
+        width: 350px;
+    }
+    .redes-sociales ul li{
+        margin-top: 10px;
+    }
+    .redes-sociales ul li.whatsapp{
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .redes-sociales{
+        width: 150px;
+    }
+    .redes-sociales ul li{
+        margin-top: 15px;
+    }
+    .redes-sociales ul li.whatsapp{
+        margin-left: 10px;
+    }
+}
